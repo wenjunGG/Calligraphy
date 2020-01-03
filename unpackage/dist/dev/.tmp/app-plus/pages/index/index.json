@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "慧龙书法",
+  "titleNView": {
+    "type": "transparent",
+    "searchInput": {
+      "backgroundColor": "rgba(231, 231, 231,.7)",
+      "borderRadius": "16px",
+      "placeholder": "搜索课程、教师、价格、特点",
+      "placeholderColor": "#606266",
+      "align": "left"
+    }
+  },
+  "usingComponents": {}
+}
