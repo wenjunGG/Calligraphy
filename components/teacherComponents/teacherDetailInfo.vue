@@ -27,7 +27,7 @@
 		align-items: center;
 		flex-wrap: nowrap;
 		background-color: #eee;
-		padding: 10px 10px;
+		padding: 3px 10px;
 		border-radius: 9px;
 
 		.t_box_image {

@@ -5,7 +5,7 @@
 			<!-- 标题栏和状态栏占位符 -->
 			<view class="titleNview-placing tileplace">
 			</view>
-			<swiper class="swiper" :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration">
+			<swiper class="swiperlubo" :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration">
 				<swiper-item v-for="(item,index) in swiperList" :key="index" class="swiperitem">
 					<image :src="item.src" mode=""></image>
 				</swiper-item>
@@ -34,7 +34,7 @@
 		</view>
 
 		<!--空格符-->
-		<view class="bd_content_space"></view>
+		<spaceLine></spaceLine>
 
 		<view class="bd_content">
 			<!--新人分享-->
@@ -197,7 +197,11 @@
 </template>
 
 <script>
+	import spaceLine from '../../components/common/space_line'
 	export default {
+		components:{
+			'spaceLine':spaceLine
+		},
 		data() {
 			return {
 				background: ['color1', 'color2', 'color3'],
@@ -314,6 +318,9 @@
 
 
 	/**轮播**/
+	.swiperlubo{
+		height: 400rpx;
+	}
 
 	/**栏目**/
 	.subject {
@@ -339,12 +346,6 @@
 				color: #212530;
 			}
 		}
-	}
-
-	/**间隔**/
-	.bd_content_space {
-		height: 20rpx;
-		background-color: #eee;
 	}
 
 	.bd_content {

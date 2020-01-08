@@ -44,14 +44,19 @@
 			</view>
 
 		</view>
+		
+		<!--分割线-->
+		<spaceLine></spaceLine>
 	</view>
 </template>
 
 <script>
 	import teacherDetailInfo from '@/components/teacherComponents/teacherDetailInfo'
+	import spaceLine from '../../components/common/space_line'
 	export default {
 		components: {
-			'teacherDetailInfo': teacherDetailInfo
+			'teacherDetailInfo': teacherDetailInfo,
+			'spaceLine':spaceLine
 		},
 		data() {
 			return {
@@ -164,7 +169,7 @@
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
-			height:60px;
+			height:40px;
 		}
 	}
 </style>
