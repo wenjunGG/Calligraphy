@@ -30,6 +30,15 @@
 			    }
 		    }
         }
+        ,{
+           "path" : "pages/pay/pay",
+           "navigationBarTitleText": "确认支付",
+           "app-plus": {
+           	"titleNView": {
+           		"type": "transparent"
+               }
+           }
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
