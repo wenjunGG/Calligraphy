@@ -11,9 +11,9 @@
 						<text class="todaySign">今日签到</text>
 					</view>
 					<view class="bottom">
-						<view class="bom_info" v-for="(item, index) in 4" :key="index">
+						<view class="bom_info" v-for="(item, index) in ListPersonInfo" :key="index" @click="persinfo_click(item.type)">
 							<view class="bom_info_pic"><image src="../../static/home/essays.png" mode=""></image></view>
-							<text>我的邀请</text>
+							<text>{{ item.name }}</text>
 						</view>
 					</view>
 					<view class="info_pic_box"><image src="../../static/home/my.png" mode=""></image></view>
@@ -46,7 +46,51 @@
 <script>
 export default {
 	data() {
-		return {};
+		return {
+			ListPersonInfo: [
+				{
+					type: 1,
+					name: '邀请好友'
+				},
+				{
+					type: 2,
+					name: '我的订单'
+				},
+				{
+					type: 3,
+					name: '我的奖金'
+				},
+				{
+					type: 4,
+					name: '我的卡券'
+				}
+			]
+		};
+	},
+	methods: {
+		//info 点击
+		persinfo_click(type) {
+			switch (type) {
+				case 1:
+				   //邀请好友
+					uni.navigateTo({
+						url: `/pages/invitefriends/index`
+					});
+					break;
+				case 2:
+				    //我的订单
+					uni.navigateTo({
+						url: `/pages/order/index`
+					});
+					break;
+				case 3:
+				     //我的奖金
+					break;
+				case 4:
+				    //我的卡券
+					break;
+			}
+		}
 	}
 };
 </script>
@@ -177,7 +221,7 @@ export default {
 				flex-flow: column;
 				width: 25%;
 				align-items: center;
-				    margin-bottom: 15px;
+				margin-bottom: 15px;
 				.opertions_info_pic {
 					width: 50px;
 					height: 50px;

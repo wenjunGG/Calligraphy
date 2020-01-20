@@ -85,6 +85,18 @@
 				}
             }
         }
+        ,{
+            "path" : "pages/invitefriends/index",
+            "style" : {
+                "navigationBarTitleText": "我的邀请"
+            }
+        }
+        ,{
+            "path" : "pages/order/index",
+            "style" : {
+                "navigationBarTitleText": "我的订单"
+            }
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
