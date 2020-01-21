@@ -85,6 +85,9 @@ export default {
 					break;
 				case 3:
 				     //我的奖金
+					 uni.navigateTo({
+					 	url: `/pages/mybonus/index`
+					 });
 					break;
 				case 4:
 				    //我的卡券

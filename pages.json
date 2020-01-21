@@ -97,6 +97,18 @@
                 "navigationBarTitleText": "我的订单"
             }
         }
+        ,{
+            "path" : "pages/mybonus/index",
+            "style" : {
+                "navigationBarTitleText": "我的奖金"
+            }
+        }
+        ,{
+            "path" : "pages/mybonus/incomedetails",
+            "style" : {
+                "navigationBarTitleText": "收入明细"
+            }
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
